@@ -39,7 +39,7 @@
         android:id="@+id/button"
         android:layout_gravity="bottom"
         android:layout_weight="0"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:onClick="click" />
 
 </LinearLayout>

@@ -78,32 +78,69 @@ public class ListActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "SMALL INTERVALS and PALE GLISSANDI " +
                             "are now available again.", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
+                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
-                else if (progress[1] && (progress[4] || progress[14] || progress[17])) {
+                else if (progress[1] && (progress[14] || progress[17])) {
                     Toast.makeText(getApplicationContext(), "REAL AND IMAGINED and PALE " +
-                            "GLISSANDI are now available again.", Toast.LENGTH_LONG).show();
-                    Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
-                            .show();
-                    note = true;
-                }
-                else if (progress[2] && progress[20] && progress[7] && !progress[18]) {
-                    Toast.makeText(getApplicationContext(), "JERKY CHIRPS is now available again.",
+                            "GLISSANDI are now available again.",
                             Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
+                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
-                else if (progress[2] && (progress[17] || progress[16] || progress[19] || progress[9] ||
-                        progress[15] || (current_text == 18 && context == 7))) {
-                    Toast.makeText(getApplicationContext(), "REAL AND IMAGINED and SMALL " +
-                            "INTERVALS are now available again.", Toast.LENGTH_LONG).show();
+                else if (progress[2] && (progress[16] || progress[19])) {
+                    Toast.makeText(getApplicationContext(), "REAL AND IMAGINED, SMALL INTERVALS " +
+                            "and CRACKING GLASSES are now available again.",
+                            Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
+                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            .show();
+                    note = true;
+                }
+                else if (progress[2] && progress[17]) {
+                    Toast.makeText(getApplicationContext(), "CRACKING GLASSES is now available " +
+                            "again, and you can still choose DULL NOISE or AGITATED RUBBING.",
+                            Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
+                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            .show();
+                    note = true;
+                }
+                else if (progress[2] && progress[9]) {
+                    Toast.makeText(getApplicationContext(), "UNRECOGNIZABLE RUSTLE is now " +
+                            "available again, and you can still choose CHAOTIC SEQUENCES or " +
+                            "JERKY CHIRPS.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
+                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            .show();
+                    note = true;
+                }
+                else if (progress[2] && progress[15]) {
+                    Toast.makeText(getApplicationContext(), "UNRECOGNIZABLE RUSTLE is now " +
+                            "available again, and you can still choose JERKY CHIRPS.",
+                            Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
+                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            .show();
+                    note = true;
+                }
+                else if (progress[2] && progress[18]) {
+                    Toast.makeText(getApplicationContext(), "UNRECOGNIZABLE RUSTLE is now " +
+                                    "available again, and you can still choose GIGANTIC HEART.",
+                            Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
+                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            .show();
+                    note = true;
+                }
+                else if (progress[20]) {
+                    Toast.makeText(getApplicationContext(), "notice that you can still choose " +
+                            "DIFFERENT SIZES.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
+                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
@@ -120,7 +157,7 @@ public class ListActivity extends AppCompatActivity {
             inner_silence = true;
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.
                 simple_list_item_1, android.R.id.text1, titlesList);
 
         ListView listView = (ListView) findViewById(R.id.titlesList);

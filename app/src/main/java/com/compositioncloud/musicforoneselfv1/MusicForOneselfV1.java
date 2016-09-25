@@ -1,20 +1,14 @@
 package com.compositioncloud.musicforoneselfv1;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
 import java.util.ArrayList;
 
-/**
- * Created by gonipeles on 07/09/2016.
- */
 public class MusicForOneselfV1 {
 
     public String[] TITLES = {"REAL AND IMAGINED", "SMALL INTERVALS", "PALE GLISSANDI",
             "BREATHING WALLS", "BROKEN SCORE", "REARRANGED ELEVATOR", "UNRECOGNIZABLE RUSTLE",
             "CRACKING GLASSES", "CAPTURED SOUND", "GIGANTIC HEART", "LONG CREAKS",
             "DIFFERENT SIZES", "BUMP REMINDERS", "BURST OF NOISE", "HIDDEN LOUDSPEAKER",
-            "CHAOTIC PITCH SEQUENCES", "DULL NOISE", "MELODIC THREADS", "JERKY CHIRPS",
+            "CHAOTIC SEQUENCES", "DULL NOISE", "MELODIC THREADS", "JERKY CHIRPS",
             "AGITATED RUBBING", "HIGH AND FRAGILE", "SHORT SQUEAKS", "INNER SILENCE"};
 
     String CLEAR_YOUR_MIND =
@@ -66,11 +60,11 @@ public class MusicForOneselfV1 {
                 "should become a bit louder as well). stop reading and continue only when you get " +
                 "to the second floor.\n\non the second floor you should see 3 chairs and an " +
                 "iPhone whose screen is broken, producing the high whistle you heard from below. " +
-                "consider the broken screen as a graphical score (the x-axis represents time, " +
+                "think of the broken screen as a graphical score (the x-axis represents time, " +
                 "the y-axis pitch), and using the sound of the copy machine as the timbre and " +
-                "thinking of the high whistle produced by the iPhone as an additional layer, " +
+                "considering the high whistle produced by the iPhone as an additional layer, " +
                 "imagine a possible interpretation of this score. click NEXT when you are done " +
-                "(a reading should last at least one minute).";
+                "(an interpretation should last at least one minute).";
     }
 
     String RearrangedElevator(String var1) {
@@ -161,13 +155,13 @@ public class MusicForOneselfV1 {
                 var3 + ". try at least 2 times before giving up and click NEXT.";
     }
 
-    String ChaoticPitchSequences(String var1, String var2) {
+    String ChaoticSequences(String var1, String var2) {
         return "afterwards, let " + var1 + " from before reoccur from time to time but somewhat " +
                 "irregularly, coming in waves of increasing and decreasing density. as the " +
-                "density decreases, imagine a fast chaotic pitch sequence, whose each individual " +
-                "step comes from a different " + var2 + ", lasting for a few seconds and " +
-                "including a brief pause towards its middle-end. count at least 7 sequences " +
-                "before clicking NEXT.";
+                "density decreases, imagine a fast chaotic pitch sequence, whose each individual step " +
+                "comes from a different " + var2 + ", lasting for a few seconds and including a " +
+                "brief pause towards its middle-end. count at least 7 sequences before clicking " +
+                "NEXT.";
     }
 
     String DullNoise(String var1) {
@@ -257,8 +251,6 @@ public class MusicForOneselfV1 {
                 }
             case 1:
                 switch (new_text) {
-                    case 4:
-                        return BrokenScore();
                     case 14:
                         return HiddenLoudspeaker("that sound of the copy machine", "in one of " +
                                 "the lockers", " and moves to another locker");
@@ -342,7 +334,7 @@ public class MusicForOneselfV1 {
                     case 9:
                         return GiganticHeart("that ringing sound", "one of the rooms around you");
                     case 15:
-                        return ChaoticPitchSequences("the crashes", "room");
+                        return ChaoticSequences("the crashes", "room");
                     case 18:
                         return JerkyChirps("that ringing sound", "a couple of additional loud " +
                                 "glass crashes are to be imagined as well, but this time, " +
@@ -400,7 +392,7 @@ public class MusicForOneselfV1 {
                             case 6:
                                 return UnrecognizableRustle("get out of the practice rooms and ");
                             case 15:
-                                return ChaoticPitchSequences("the crashes", "room");
+                                return ChaoticSequences("the crashes", "room");
                             case 18:
                                 return JerkyChirps("that ringing sound", "a couple of additional " +
                                         "loud glass crashes are to be imagined as well, but this " +
@@ -531,7 +523,7 @@ public class MusicForOneselfV1 {
                                 return BumpReminders("shift your focus of attention back to",
                                         "the burst of noise that ended the previous instruction");
                             case 15:
-                                return ChaoticPitchSequences("the burst of noise", "direction");
+                                return ChaoticSequences("the burst of noise", "direction");
                             case 16:
                                 return DullNoise("let the burst of noise from before repeat for " +
                                     "a while and then replace it");
@@ -807,10 +799,6 @@ public class MusicForOneselfV1 {
                 }
             case 20:
                 switch (new_text) {
-                    case 6:
-                        return UnrecognizableRustle("");
-                    case 7:
-                        return CrackingGlasses("");
                     case 11:
                         return DifferentSizes("the high and fragile tone", "the tone becomes " +
                                 "louder, brighter and sometimes, although not very often, even a " +
@@ -848,7 +836,7 @@ public class MusicForOneselfV1 {
                 next_texts.add(9); next_texts.add(10); next_texts.add(11);
                 break;
             case 1:
-                next_texts.add(4); next_texts.add(14); next_texts.add(17);
+                next_texts.add(14); next_texts.add(17);
                 break;
             case 2:
                 next_texts.add(11); next_texts.add(20);
@@ -968,7 +956,7 @@ public class MusicForOneselfV1 {
                 }
                 break;
             case 20:
-                next_texts.add(6); next_texts.add(7); next_texts.add(11); next_texts.add(18);
+                next_texts.add(11); next_texts.add(18);
                 break;
             case 21:
                 next_texts.add(8); next_texts.add(19);
@@ -978,6 +966,10 @@ public class MusicForOneselfV1 {
             if(progress[next_texts.get(i)]) {
                 next_texts.remove(i);
             }
+        }
+        if (next_texts.size() > 4) {
+            next_texts.remove(1);
+            next_texts.remove(0);
         }
         return next_texts;
     }

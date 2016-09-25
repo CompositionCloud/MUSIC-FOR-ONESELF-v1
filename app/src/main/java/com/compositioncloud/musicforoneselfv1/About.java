@@ -43,7 +43,7 @@ public class About extends AppCompatActivity {
 
         DocumentView documentView = (DocumentView) findViewById(R.id.text);
         documentView.getDocumentLayoutParams().setHyphenator(DefaultHyphenator.
-                getInstance(DefaultHyphenator.HyphenPattern.PT));
+                getInstance(DefaultHyphenator.HyphenPattern.EN_US));
         documentView.getDocumentLayoutParams().setHyphenated(true);
 
         Intent intent = getIntent();

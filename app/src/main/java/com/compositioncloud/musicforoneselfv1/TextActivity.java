@@ -2,11 +2,18 @@ package com.compositioncloud.musicforoneselfv1;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.TextPaint;
+import android.text.style.AlignmentSpan;
+import android.text.style.StyleSpan;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +23,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.bluejamesbond.text.DocumentView;
+import com.bluejamesbond.text.IDocumentLayout;
 import com.bluejamesbond.text.hyphen.DefaultHyphenator;
+import com.bluejamesbond.text.style.JustifiedSpan;
+import com.bluejamesbond.text.style.TextAlignment;
 
 public class TextActivity extends AppCompatActivity {
 
@@ -45,7 +55,7 @@ public class TextActivity extends AppCompatActivity {
 
         DocumentView documentView = (DocumentView) findViewById(R.id.text);
         documentView.getDocumentLayoutParams().setHyphenator(DefaultHyphenator.
-                getInstance(DefaultHyphenator.HyphenPattern.PT));
+                getInstance(DefaultHyphenator.HyphenPattern.EN_US));
         documentView.getDocumentLayoutParams().setHyphenated(true);
 
         Button button = (Button) findViewById(R.id.button);
