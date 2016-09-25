@@ -100,10 +100,10 @@ public class MusicForOneselfV1 {
     String CapturedSound() {
         return "afterwards, open the window in front of you and observe how the sound of the " +
                 "outside penetrates the sound of the inside. focus for a while on a single part " +
-                "of the sound (birds, people outside, wind, etc.), close the window and capture " +
-                "in your mind that part of the sound on which you have focused, imagining that " +
-                "it flies around the room, trying to find a way to escape. after about a minute, " +
-                "open the window again and let it out. close the window and click NEXT.";
+                "of the sound (birds, people outside, wind, etc.), capture it in your mind and " +
+                "close the window, imagining that it flies around the room, trying to find a way " +
+                "to escape. after about a minute, open the window again, let it out, close the " +
+                "window again and click NEXT.";
     }
 
     String GiganticHeart(String var1, String var2) {
