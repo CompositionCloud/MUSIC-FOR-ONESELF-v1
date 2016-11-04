@@ -57,8 +57,8 @@ public class MusicForOneselfV1 {
                 "machine. still, keep the sound of the copy machine in your mind and walk up the " +
                 "stairs to the second floor. for each step you take, lower the pitch and " +
                 "increase the loudness of the sound you imagine (as you go up, the high whistle " +
-                "should become a bit louder as well). stop reading and continue only when you get " +
-                "to the second floor.\n\non the second floor you should see 3 chairs and an " +
+                "should become a bit louder as well). stop reading and continue only when you " +
+                "get to the second floor.\n\non the second floor you should see 3 chairs and an " +
                 "iPhone whose screen is broken, producing the high whistle you heard from below. " +
                 "think of the broken screen as a graphical score (the x-axis represents time, " +
                 "the y-axis pitch), and using the sound of the copy machine as the timbre and " +
@@ -91,10 +91,10 @@ public class MusicForOneselfV1 {
         return var1 + "enter rooms C21-27 (the door in front of the elevator). stop reading and " +
                 "continue only when you get there.\n\nwhen you are there, imagine the sound of " +
                 "the large glass doors of the practice rooms around you cracking apart extremely " +
-                "slowly for about half a minute and then crashing one after the other. one of these " +
-                "crashes should be so loud that your ears will start ringing. hold this ringing " +
-                "sound in your mind even if it is somewhat uncomfortable, and click NEXT only " +
-                "after at least 10 seconds.";
+                "slowly for about half a minute and then crashing one after the other. one of " +
+                "these crashes should be so loud that your ears will start ringing. hold this " +
+                "ringing sound in your mind even if it is somewhat uncomfortable, and click NEXT " +
+                "only after at least 10 seconds.";
     }
 
     String CapturedSound() {
@@ -109,9 +109,9 @@ public class MusicForOneselfV1 {
     String GiganticHeart(String var1, String var2) {
         return "on top of " + var1 + " from before, imagine the beating of a gigantic heart, " +
                 "sounding from " + var2 + " and pulsating at a fixed moderate rate. after about " +
-                "15-25 beatings the heart should stop for a while, and revive gradually, " +
-                "accelerating to a rate a bit slower than before, but then after another 15-25 " +
-                "beatings, it should stop again and die. click NEXT when it is dead.";
+                "15-25 beatings the heart should stop for a while, revive gradually, " +
+                "accelerating to a rate a bit slower than before, and then after another 15-25 " +
+                "beatings, stop again and die. click NEXT when it is dead.";
     }
 
     String LongCreaks(String var1, String var2, String var3, String var4, String var5) {
@@ -158,10 +158,10 @@ public class MusicForOneselfV1 {
     String ChaoticSequences(String var1, String var2) {
         return "afterwards, let " + var1 + " from before reoccur from time to time but somewhat " +
                 "irregularly, coming in waves of increasing and decreasing density. as the " +
-                "density decreases, imagine a fast chaotic pitch sequence, whose each individual step " +
-                "comes from a different " + var2 + ", lasting for a few seconds and including a " +
-                "brief pause towards its middle-end. count at least 7 sequences before clicking " +
-                "NEXT.";
+                "density decreases, imagine a fast chaotic pitch sequence, whose each individual " +
+                "step comes from a different " + var2 + ". every sequence should last for a few " +
+                "seconds and include a brief pause towards its middle-end part. count at least 7 " +
+                "sequences before clicking NEXT.";
     }
 
     String DullNoise(String var1) {
@@ -191,7 +191,7 @@ public class MusicForOneselfV1 {
 
     String AgitatedRubbing(String var1, String var2) {
         return "imagine then a soft but agitated rubbing sound, whose timbre varies between a " +
-                "smooth swishing to a dirty grating, produced by \"cleaning\" " + var1 + ". " +
+                "smooth swishing and a dirty grating, produced by \"cleaning\" " + var1 + ". " +
                 "click NEXT " + "when " + var2 + ".";
     }
 
@@ -324,8 +324,8 @@ public class MusicForOneselfV1 {
                     case 19:
                         return AgitatedRubbing("the window physically and the unrecognizable " +
                                 "rustle from before metaphorically: the rustles should stop for " +
-                                "a little while, come back, then stop for a little longer, and so " +
-                                "on", "they completely disappear");
+                                "a little while, come back, then stop for a little longer, and " +
+                                "so on", "they completely disappear");
                     default:
                         return "";
                 }
