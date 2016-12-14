@@ -137,7 +137,7 @@ public class ListActivity extends AppCompatActivity {
                     note = true;
                 }
                 else if (progress[20]) {
-                    Toast.makeText(getApplicationContext(), "notice that you can still choose " +
+                    Toast.makeText(getApplicationContext(), "you can still choose " +
                             "DIFFERENT SIZES.", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
                             "no more texts will be there to choose from.", Toast.LENGTH_LONG)

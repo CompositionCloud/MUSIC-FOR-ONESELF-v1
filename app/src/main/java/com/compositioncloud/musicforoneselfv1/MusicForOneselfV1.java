@@ -19,7 +19,7 @@ public class MusicForOneselfV1 {
                 "closed gate. " + var2 + "stop reading and continue only when you get there.\n\n" +
                 "when you are there, try to focus on the pitch components of that sound and " +
                 "\"clean\" them in your mind from the noisy ones, imagining that they are played " +
-                "by instruments of your choice. for about a minute, alternate between the real " +
+                "on instruments of your choice. for about a minute, alternate between the real " +
                 "sound and its imagined instrumental version, as if comparing a painting to its " +
                 "subject. click NEXT when you are done.";
     }
@@ -27,8 +27,8 @@ public class MusicForOneselfV1 {
     String SmallIntervals(String var1, String var2) {
         return var1  + " and enter the locker room (H4 Schliessfächer). " + var2 + "stop reading " +
                 "and continue only when you get there.\n\nwhen you are there, focus on the sound " +
-                "coming from the copy machine and imagine that 2 similar sounds are heard from 2 " +
-                "of the 107 lockers in the room. assuming that it is possible to change the " +
+                "coming from the copy machine and imagine that two similar sounds are heard from " +
+                "two of the 107 lockers in the room. assuming that it is possible to change the " +
                 "specific lockers from which the sounds come simply by looking at them (the 107 " +
                 "lockers should correspond to an ascending transpositions of the sound of the " +
                 "copy machine, encompassing an interval slightly larger than a major 2nd), " +
@@ -58,33 +58,33 @@ public class MusicForOneselfV1 {
                 "stairs to the second floor. for each step you take, lower the pitch and " +
                 "increase the loudness of the sound you imagine (as you go up, the high whistle " +
                 "should become a bit louder as well). stop reading and continue only when you " +
-                "get to the second floor.\n\non the second floor you should see 3 chairs and an " +
-                "iPhone whose screen is broken, producing the high whistle you heard from below. " +
-                "think of the broken screen as a graphical score (the x-axis represents time, " +
-                "the y-axis pitch), and using the sound of the copy machine as the timbre and " +
-                "considering the high whistle produced by the iPhone as an additional layer, " +
+                "get to the second floor.\n\non the second floor you should see three chairs and " +
+                "an iPhone whose screen is broken, producing the high whistle you heard from " +
+                "below. think of the broken screen as a graphical score (the x-axis represents " +
+                "time, the y-axis pitch), and using the sound of the copy machine as the timbre " +
+                "and considering the high whistle produced by the iPhone as an additional layer, " +
                 "imagine a possible interpretation of this score. click NEXT when you are done " +
                 "(an interpretation should last at least one minute).";
     }
 
     String RearrangedElevator(String var1) {
         return var1 + " and take the elevator to the third (top) floor, paying attention to all " +
-                "the sounds that it makes (also while you wait for it). after you come out, " +
-                "recall those sounds in your mind but rearrange their order. imagine at least 2 " +
-                "different orders before you click NEXT.";
+                "the sounds that it makes (also while you are waiting for it). after you come " +
+                "out, recall those sounds in your mind but rearrange their order. imagine at " +
+                "least two different orders before you click NEXT.";
     }
 
     String UnrecognizableRustle(String var1) {
         return var1 + "walk to the other side of the room behind the elevator. stop reading and " +
                 "continue only when you get there.\n\nwhen you are there, take a look at the " +
-                "view from one of the 2 windows above you showing the sky. \"scan\" the picture, " +
-                "dividing it into rows and columns, and whenever your eyes meet a cloud, imagine " +
-                "the sound of rain falling on the window, increasing and decreasing in intensity " +
-                "according to the color of the cloud. if there are no clouds at all, imagine " +
-                "just a light shower; if it is already raining, simply listen to the real sound. " +
-                "as time passes, imagine that the sound quality of your imagined rain gradually " +
-                "deteriorates. when it sounds (after a minute or two) like an unrecognizable " +
-                "rustle, click NEXT.";
+                "view from one of the two windows above you showing the sky. \"scan\" the " +
+                "picture, dividing it into rows and columns, and whenever your eyes meet a " +
+                "cloud, imagine the sound of rain falling on the window, increasing and " +
+                "decreasing in intensity according to the color of the cloud. if there are no " +
+                "clouds at all, imagine just a light shower; if it is already raining, simply " +
+                "listen to the real sound. as time passes, imagine that the sound quality of " +
+                "your imagined rain gradually deteriorates. when it sounds (after a minute or " +
+                "two) like an unrecognizable rustle, click NEXT.";
     }
 
     String CrackingGlasses(String var1) {
@@ -129,15 +129,15 @@ public class MusicForOneselfV1 {
                 "you, and assuming that after a few seconds the size of the room drastically and " +
                 "unexpectedly changes, bring back to your mind " + var1 + " from before. " +
                 "imagining that " + var2 + ", change the size of the room once again to a third, " +
-                "different size, and alternate between these 3 different sizes for another " +
+                "different size, and alternate between these three different sizes for about " +
                 "minute. afterwards, click NEXT.";
     }
 
     String BumpReminders(String var1, String var2) {
         return var1 + " the sound around you. whenever you hear a sound with a definite attack, " +
-                "recall for a few seconds once again " + var2 + ". after about a minute and a " +
-                "half (or a minute if even the slightest bump does not occur) imagine a long " +
-                "faint downward glissando and click NEXT.";
+                "recall for a few seconds " + var2 + ". after about a minute and a half (or a " +
+                "minute if even the slightest bump does not occur) imagine a long faint downward " +
+                "glissando and click NEXT.";
     }
 
     String BurstOfNoise(String var1) {
@@ -152,7 +152,7 @@ public class MusicForOneselfV1 {
         return "imagine then that a small loudspeaker, producing " + var1 + ", is hidden " + var2 +
                 ". walk around and try to find where the sound comes from, however, whenever you " +
                 "get close enough, imagine that the loudspeaker suddenly changes its position" +
-                var3 + ". try at least 2 times before giving up and click NEXT.";
+                var3 + ". try at least twice before giving up and click NEXT.";
     }
 
     String ChaoticSequences(String var1, String var2) {
@@ -160,14 +160,14 @@ public class MusicForOneselfV1 {
                 "irregularly, coming in waves of increasing and decreasing density. as the " +
                 "density decreases, imagine a fast chaotic pitch sequence, whose each individual " +
                 "step comes from a different " + var2 + ". every sequence should last for a few " +
-                "seconds and include a brief pause towards its middle-end part. count at least 7 " +
-                "sequences before clicking NEXT.";
+                "seconds and pausing briefly in the middle. count at least seven sequences " +
+                "before clicking NEXT.";
     }
 
     String DullNoise(String var1) {
-        return var1 + " by a soft dull noise, intermittently interrupted by a few pauses, but " +
+        return var1 + " with a soft dull noise, intermittently interrupted by a few pauses, but " +
                 "persistently continuing, and explore for a while this unusual imagined " +
-                "situation in which nothing is audible, except that dull noise. afterwards, " +
+                "situation in which nothing is audible except that dull noise. afterwards, " +
                 "click NEXT.";
     }
 
@@ -203,13 +203,13 @@ public class MusicForOneselfV1 {
 
     String ShortSqueaks() {
         return "let the burst of noise from before repeat for a while. on top of that, short " +
-                "squeaks are to be imagined, occuring when the sound around you is particularly " +
-                "quiet, or otherwise, if the loudness is too homogenous, just once in a while. " +
+                "squeaks are to be imagined, occurring when the sound around you is particularly " +
+                "quiet, or otherwise, if the loudness is too homogeneous, just once in a while. " +
                 "click NEXT after about 30 squeaks.";
     }
 
     String InnerSilence() {
-        return "finally, stop listening to any sound, both physically and mentaly, and try to " +
+        return "finally, stop listening to any sound, both physically and mentally, and try to " +
                 "imagine for about half a minute a complete silence no matter how loud it is " +
                 "outside. the end.";
     }
@@ -256,7 +256,7 @@ public class MusicForOneselfV1 {
                                 "the lockers", " and moves to another locker");
                     case 17:
                         return MelodicThreads("there are sounds coming from 5-10 lockers " +
-                                "(instead of only 2), creating a dense cluster and a complex " +
+                                "(instead of only two), creating a dense cluster and a complex " +
                                 "beating pattern", "handles of the lockers");
                     default:
                         return "";
@@ -521,7 +521,7 @@ public class MusicForOneselfV1 {
                                         "through entrance A");
                             case 12:
                                 return BumpReminders("shift your focus of attention back to",
-                                        "the burst of noise that ended the previous instruction");
+                                        "the burst of noise that ended the previous text");
                             case 15:
                                 return ChaoticSequences("the burst of noise", "direction");
                             case 16:
@@ -536,7 +536,7 @@ public class MusicForOneselfV1 {
                                 return CapturedSound();
                             case 12:
                                 return BumpReminders("focus back on", "the burst of noise that " +
-                                        "ended the previous instruction");
+                                        "ended the previous text");
                             case 21:
                                 return ShortSqueaks();
                             default:
@@ -615,11 +615,11 @@ public class MusicForOneselfV1 {
                                         "(floor -1), and then continue walking down",
                                         CLEAR_YOUR_MIND);
                             case 1:
-                                return SmallIntervals("get out of the practic rooms, take the " +
+                                return SmallIntervals("get out of the practice rooms, take the " +
                                         "elevator or walk down the stairs to the main corridor " +
                                         "(floor -1)", CLEAR_YOUR_MIND);
                             case 3:
-                                return BreathingWalls("get out of the practic rooms, take the " +
+                                return BreathingWalls("get out of the practice rooms, take the " +
                                         "elevator or ");
                             case 6:
                                 return UnrecognizableRustle("get out of the practice rooms and ");
@@ -724,9 +724,9 @@ public class MusicForOneselfV1 {
                             case 7:
                                 return CrackingGlasses("");
                             case 11:
-                                return DifferentSizes("the jerky chirps", "their " +
-                                        "tone becomes louder, brighter and sometimes, although " +
-                                        "not very often, even a bit harsh");
+                                return DifferentSizes("the jerky chirps", "their tone becomes " +
+                                        "louder, brighter and sometimes, although not very " +
+                                        "often, even a bit harsh");
                             default:
                                 return "";
                         }
@@ -738,11 +738,11 @@ public class MusicForOneselfV1 {
                                         "(floor -1), and then continue walking down",
                                         CLEAR_YOUR_MIND);
                             case 1:
-                                return SmallIntervals("get out of the practic rooms, take the " +
+                                return SmallIntervals("get out of the practice rooms, take the " +
                                         "elevator or walk down the stairs to the main corridor " +
                                         "(floor -1)", CLEAR_YOUR_MIND);
                             case 3:
-                                return BreathingWalls("get out of the practic rooms, take the " +
+                                return BreathingWalls("get out of the practice rooms, take the " +
                                         "elevator or ");
                             case 6:
                                 return UnrecognizableRustle("get out of the practice rooms and ");
@@ -970,6 +970,48 @@ public class MusicForOneselfV1 {
         if (next_texts.size() > 4) {
             next_texts.remove(1);
             next_texts.remove(0);
+        }
+        if (next_texts.size() > 1) {
+            if((progress[0]==false && progress[10]==true && progress[11]==true) ||
+                    (progress[7]==false && progress[15]==true && progress[18]==true)) {
+                next_texts.remove(Integer.valueOf(9));
+            }
+            if(progress[0]==false && progress[9]==true && progress[11]==true) {
+                next_texts.remove(Integer.valueOf(10));
+            }
+            if(progress[0]==false && progress[9]==true && progress[10]==true) {
+                next_texts.remove(Integer.valueOf(11));
+            }
+            if((progress[1]==false && progress[17]==true) ||
+                    (progress[3]==false && progress[12]==true && progress[13]==true)) {
+                next_texts.remove(Integer.valueOf(14));
+            }
+            if((progress[1]==false && progress[14]==true) ||
+                    (progress[2]==false && progress[6]==false && progress[12]==true && progress[13]
+                            ==true)) {
+                next_texts.remove(Integer.valueOf(17));
+            }
+            if(progress[2]==false && progress[6]==false && progress[17]==true && progress[19]==
+                    true) {
+                next_texts.remove(Integer.valueOf(16));
+            }
+            if(progress[2]==false && progress[6]==false && progress[16]==true && progress[17]==
+                    true) {
+                next_texts.remove(Integer.valueOf(19));
+            }
+            if(progress[2]==false && progress[7]==false && progress[9]==true && progress[18]==
+                    true) {
+                next_texts.remove(Integer.valueOf(15));
+            }
+            if(progress[7]==false && progress[9]==true && progress[15]==true) {
+                next_texts.remove(Integer.valueOf(18));
+            }
+            if(progress[3]==false && progress[13]==true && progress[14]==true) {
+                next_texts.remove(Integer.valueOf(12));
+            }
+            if(progress[3]==false && progress[12]==true && progress[14]==true) {
+                next_texts.remove(Integer.valueOf(13));
+            }
         }
         return next_texts;
     }

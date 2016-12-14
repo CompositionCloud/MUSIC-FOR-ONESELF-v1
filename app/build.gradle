@@ -8,7 +8,7 @@ android {
         applicationId "com.compositioncloud.musicforoneselfv1"
         minSdkVersion 8
         targetSdkVersion 24
-        versionCode 6
+        versionCode 8
         versionName "1.0"
     }
     buildTypes {
