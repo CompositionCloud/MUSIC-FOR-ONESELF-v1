@@ -15,7 +15,7 @@ public class MusicForOneselfV1 {
             "as you go, try to clear your mind and avoid imagining any sound. ";
 
     String RealAndImagined(String var1, String var2) {
-        return var1 + " following the sound coming from the equipment room until you reach a " +
+        return var1 + " following the sound coming from the equipment room, until you reach a " +
                 "closed gate. " + var2 + "stop reading and continue only when you get there.\n\n" +
                 "when you are there, try to focus on the pitch components of that sound and " +
                 "\"clean\" them in your mind from the noisy ones, imagining that they are played " +
@@ -160,12 +160,11 @@ public class MusicForOneselfV1 {
                 "irregularly, coming in waves of increasing and decreasing density. as the " +
                 "density decreases, imagine a fast chaotic pitch sequence, whose each individual " +
                 "step comes from a different " + var2 + ". every sequence should last for a few " +
-                "seconds and pausing briefly in the middle. count at least seven sequences " +
-                "before clicking NEXT.";
+                "seconds. count at least seven sequences before clicking NEXT.";
     }
 
     String DullNoise(String var1) {
-        return var1 + " with a soft dull noise, intermittently interrupted by a few pauses, but " +
+        return var1 + " with a soft dull noise, intermittently interrupted by a few pauses but " +
                 "persistently continuing, and explore for a while this unusual imagined " +
                 "situation in which nothing is audible except that dull noise. afterwards, " +
                 "click NEXT.";

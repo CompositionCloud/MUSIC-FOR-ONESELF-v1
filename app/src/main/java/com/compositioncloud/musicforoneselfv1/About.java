@@ -9,9 +9,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.bluejamesbond.text.DocumentView;
-import com.bluejamesbond.text.hyphen.DefaultHyphenator;
-
 import java.util.List;
 
 public class About extends AppCompatActivity {
@@ -40,11 +37,6 @@ public class About extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        DocumentView documentView = (DocumentView) findViewById(R.id.text);
-        documentView.getDocumentLayoutParams().setHyphenator(DefaultHyphenator.
-                getInstance(DefaultHyphenator.HyphenPattern.EN_US));
-        documentView.getDocumentLayoutParams().setHyphenated(true);
 
         Intent intent = getIntent();
 

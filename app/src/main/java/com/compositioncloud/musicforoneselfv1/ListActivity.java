@@ -123,7 +123,7 @@ public class ListActivity extends AppCompatActivity {
                             "available again, and you can still choose JERKY CHIRPS.",
                             Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
@@ -132,7 +132,7 @@ public class ListActivity extends AppCompatActivity {
                                     "available again, and you can still choose GIGANTIC HEART.",
                             Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
@@ -140,7 +140,7 @@ public class ListActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "you can still choose " +
                             "DIFFERENT SIZES.", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }

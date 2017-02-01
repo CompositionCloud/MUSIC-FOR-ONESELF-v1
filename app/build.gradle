@@ -6,9 +6,9 @@ android {
 
     defaultConfig {
         applicationId "com.compositioncloud.musicforoneselfv1"
-        minSdkVersion 8
+        minSdkVersion 7
         targetSdkVersion 24
-        versionCode 8
+        versionCode 9
         versionName "1.0"
     }
     buildTypes {
@@ -24,5 +24,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support:design:24.0.0'
-    compile 'com.github.bluejamesbond:textjustify-android:2.1.6'
 }

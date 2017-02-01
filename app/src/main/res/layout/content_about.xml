@@ -19,19 +19,14 @@
         android:id="@+id/scrollView"
         android:layout_weight="1">
 
-        <com.bluejamesbond.text.DocumentView xmlns:ext="http://schemas.android.com/apk/res-auto"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            ext:documentView_antialias="true"
-            ext:documentView_cacheConfig="auto_quality"
-            ext:documentView_hyphen="-"
-            ext:documentView_reverse="false"
-            ext:documentView_textColor="#000000"
-            ext:documentView_textFormat="plain"
-            ext:documentView_textSize="20sp"
-            ext:documentView_textAlignment="justified"
-            ext:documentView_text="@string/about_text"
-            android:id="@+id/text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/about_text"
+            android:id="@+id/text"
+            android:textColor="#000000" />
+
     </ScrollView>
 
 </LinearLayout>

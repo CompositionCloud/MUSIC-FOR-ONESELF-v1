@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.text.Layout;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -21,12 +22,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.bluejamesbond.text.DocumentView;
-import com.bluejamesbond.text.IDocumentLayout;
-import com.bluejamesbond.text.hyphen.DefaultHyphenator;
-import com.bluejamesbond.text.style.JustifiedSpan;
-import com.bluejamesbond.text.style.TextAlignment;
 
 public class TextActivity extends AppCompatActivity {
 
@@ -53,10 +48,7 @@ public class TextActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        DocumentView documentView = (DocumentView) findViewById(R.id.text);
-        documentView.getDocumentLayoutParams().setHyphenator(DefaultHyphenator.
-                getInstance(DefaultHyphenator.HyphenPattern.EN_US));
-        documentView.getDocumentLayoutParams().setHyphenated(true);
+        TextView textView = (TextView) findViewById(R.id.text);
 
         Button button = (Button) findViewById(R.id.button);
 
@@ -84,12 +76,12 @@ public class TextActivity extends AppCompatActivity {
         }
         if (new_text == -1) {
             setTitle(R.string.app_name);
-            documentView.setText(getString(R.string.intro_text));
+            textView.setText(Html.fromHtml(getString(R.string.intro_text)));
             button.setText(R.string.start_now);
         }
         else {
             setTitle(the_game.TITLES[new_text]);
-            documentView.setText(the_game.CreateText(last_text, new_text, context));
+            textView.setText(the_game.CreateText(last_text, new_text, context));
             button.setText(R.string.next);
         }
 
