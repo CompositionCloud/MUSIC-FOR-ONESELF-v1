@@ -23,16 +23,16 @@ public class ListActivity extends AppCompatActivity {
     public final static String PROGRESS = "com.compositioncloud.musicforoneselfv1.PROGRESS_LIST";
     public final static String NOTE = "com.compositioncloud.musicforoneselfv1.NOTE_LIST";
 
-    int current_text;
-    int new_text;
-    int context;
-    boolean[] progress = new boolean[23];
-    boolean note;
-    boolean inner_silence;
+    private int current_text;
+    private int new_text;
+    private int context;
+    private boolean[] progress = new boolean[23];
+    private boolean note;
+    private boolean inner_silence;
 
-    MusicForOneselfV1 the_game = new MusicForOneselfV1();
+    private final MusicForOneselfV1 the_game = new MusicForOneselfV1();
 
-    ArrayList<Integer> next_texts;
+    private ArrayList<Integer> next_texts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -209,7 +209,7 @@ public class ListActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void nextText() {
+    private void nextText() {
         Intent intent = new Intent(this, TextActivity.class);
         intent.putExtra(FROM_LIST, true);
         intent.putExtra(CURRENT_TEXT, current_text);

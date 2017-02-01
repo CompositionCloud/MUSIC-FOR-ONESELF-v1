@@ -2,14 +2,9 @@ package com.compositioncloud.musicforoneselfv1;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
-
-import java.util.List;
 
 public class About extends AppCompatActivity {
 
@@ -21,13 +16,13 @@ public class About extends AppCompatActivity {
     public final static String PROGRESS = "com.compositioncloud.musicforoneselfv1.PROGRESS_ABOUT";
     public final static String NOTE = "com.compositioncloud.musicforoneselfv1.NOTE_ABOUT";
 
-    boolean from_list;
-    int last_text;
-    int current_text;
-    int new_text;
-    int context;
-    boolean[] progress = new boolean[23];
-    boolean note;
+    private boolean from_list;
+    private int last_text;
+    private int current_text;
+    private int new_text;
+    private int context;
+    private boolean[] progress = new boolean[23];
+    private boolean note;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
