@@ -76,7 +76,6 @@ public class TextActivity extends AppCompatActivity {
         }
         if (new_text == -1) {
             setTitle(R.string.app_name);
-            textView.setText(Html.fromHtml(getString(R.string.intro_text)));
             button.setText(R.string.start_now);
         }
         else {
