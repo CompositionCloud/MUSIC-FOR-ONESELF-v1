@@ -1,22 +1,22 @@
 <resources>
     <string name="app_name">MUSIC FOR ONESELF v1</string>
-    <string name="which_beginning">WHICH BEGINNING?</string>
+    <string name="which_beginning">CHOOSE A BEGINNING</string>
     <string name="whats_next">WHAT\'S NEXT?</string>
     <string name="start_again">START AGAIN</string>
     <string name="about">ABOUT</string>
     <string name="intro_text"><b><i>welcome to MUSIC FOR ONESELF v1!</i></b> this app
-        consists of 23 short texts arranged in a modular way, that will guide you through a solitary
+        consists of 23 short texts arranged in a modular fashion, that will guide you through a solitary
         and partially imagined musical experience around the Jazzcampus of the Musik-Akademie Basel,
-        giving you instructions for where to go, what to listen to and what to imagine, but also
+        giving you instructions for where to go, what to listen to, and what to imagine, but also
         allowing you to create your own chain of events, your own imagined sound story. before you
-        start, notice that it is assumed that at the beginning you will be in the main corridor of
-        floor -1. so get prepared and click on the START NOW button below when you are ready.
+        start, note that it is assumed that at the beginning you will be in the main corridor of
+        floor -1. so, prepare yourself and click on the START NOW button below when you are ready.
     </string>
     <string name="start_now">START NOW</string>
     <string name="next">NEXT</string>
-    <string name="about_text"><b><i>MUSIC FOR ONESELF v1</i></b> is part of CompositionCloud, a work
-        in progress by composer Goni Peles, which can be shortly described as an abstract rhizomatic
-        space containing different ideas to be used in modular ways to create art, mostly in the
-        realms of sound and music, but not necessarily.
+    <string name="about_text"><b><i>MUSIC FOR ONESELF v1</i></b> was created by composer Goni Peles. it is
+        part of <i>CompositionCloud</i>, a work in progress that can be briefly described as an abstract
+        rhizomatic space containing different ideas to be used in modular ways to create art, mostly
+        in the realms of sound and music, but not necessarily.
     </string>
 </resources>

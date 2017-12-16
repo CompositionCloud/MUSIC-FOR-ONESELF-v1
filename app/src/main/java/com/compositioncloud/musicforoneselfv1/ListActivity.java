@@ -76,83 +76,80 @@ public class ListActivity extends AppCompatActivity {
             if(!note) {
                 if (progress[0] && (progress[9] || progress[10] || progress[11])) {
                     Toast.makeText(getApplicationContext(), "SMALL INTERVALS and PALE GLISSANDI " +
-                            "are now available again.", Toast.LENGTH_LONG).show();
+                            "are available again.", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            "there are no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
                 else if (progress[1] && (progress[14] || progress[17])) {
                     Toast.makeText(getApplicationContext(), "REAL AND IMAGINED and PALE " +
-                            "GLISSANDI are now available again.",
+                            "GLISSANDI are available again.",
                             Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            "there are no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
                 else if (progress[2] && (progress[16] || progress[19])) {
-                    Toast.makeText(getApplicationContext(), "REAL AND IMAGINED, SMALL INTERVALS " +
-                            "and CRACKING GLASSES are now available again.",
+                    Toast.makeText(getApplicationContext(), "REAL AND IMAGINED, SMALL INTERVALS, " +
+                            "and CRACKING GLASSES are available again.",
                             Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            "there are no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
                 else if (progress[2] && progress[17]) {
-                    Toast.makeText(getApplicationContext(), "CRACKING GLASSES is now available " +
-                            "again, and you can still choose DULL NOISE or AGITATED RUBBING.",
+                    Toast.makeText(getApplicationContext(), "DULL NOISE and AGITATED RUBBING are still available. " +
+                            "CRACKING GLASSES is available again.",
                             Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            "there are no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
                 else if (progress[2] && progress[9]) {
-                    Toast.makeText(getApplicationContext(), "UNRECOGNIZABLE RUSTLE is now " +
-                            "available again, and you can still choose CHAOTIC SEQUENCES or " +
-                            "JERKY CHIRPS.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "CHAOTIC SEQUENCES and JERKY CHIRPS are still available. " +
+                            "UNRECOGNIZABLE RUSTLE is available again.", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "no more texts will be there to choose from.", Toast.LENGTH_LONG)
+                            "there are no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
                 else if (progress[2] && progress[15]) {
-                    Toast.makeText(getApplicationContext(), "UNRECOGNIZABLE RUSTLE is now " +
-                            "available again, and you can still choose JERKY CHIRPS.",
+                    Toast.makeText(getApplicationContext(), "JERKY CHIRPS is still available. UNRECOGNIZABLE RUSTLE is " +
+                            "available again.",
                             Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
+                            "there are no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
                 else if (progress[2] && progress[18]) {
-                    Toast.makeText(getApplicationContext(), "UNRECOGNIZABLE RUSTLE is now " +
-                                    "available again, and you can still choose GIGANTIC HEART.",
+                    Toast.makeText(getApplicationContext(), "GIGANTIC HEART is still available. UNRECOGNIZABLE RUSTLE is " +
+                                    "available again.",
                             Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
+                            "there are no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
                 else if (progress[20]) {
-                    Toast.makeText(getApplicationContext(), "you can still choose " +
-                            "DIFFERENT SIZES.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "DIFFERENT SIZES is still available.", Toast.LENGTH_LONG).show();
                     Toast.makeText(getApplicationContext(), "MUSIC FOR ONESELF v1 will end when " +
-                            "there will be no more texts to choose from.", Toast.LENGTH_LONG)
+                            "there are no more texts to choose from.", Toast.LENGTH_LONG)
                             .show();
                     note = true;
                 }
             }
             if(next_texts.size() == 1) {
-                Toast.makeText(getApplicationContext(), "there is only one text to choose from " +
-                        "for the moment!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "you have no choice!", Toast.LENGTH_LONG).show();
             }
         }
         else {
             titlesList = new String[1]; titlesList[0] = "INNER SILENCE";
-            Toast.makeText(getApplicationContext(), "there is only one text to choose from!",
+            Toast.makeText(getApplicationContext(), "you have no choice!",
                     Toast.LENGTH_LONG).show();
             inner_silence = true;
         }
